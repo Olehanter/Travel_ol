@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="RU">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./pages/index.css">
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="body">
+    <div class="page">
+        <header class="header">
+            <div class='header__logo'></div>
+            <span class="header__lang">RU EN</span>
+                <nav class="navbar">
+                    <div class="navbar-box">
+                    <div class="navbar__wrap">
+                        <div class="hamburger">
+                        <div class="hamburger__field" id="hamburger">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
+                        </div>
+                        
+                        <ul class="menu" id="menu">
+                        <li><a href="./index.html">Главная</a></li>
+                        <li><a href="./slider.html">Слайдер</a></li>
+                        <li><a href="./calc.html">Калькулятор</a></li>
+                        <li><a href="./rezune.html">Обо мне</a></li>
+                        <li><a href="./contact.html">Контакты</a></li>
+                        <li><a href="./rewiew.html">Отзывы</a></li>
+                        </ul>
+                    </div>
+                    </div>
+                </nav>
+        </header>
+
+        <main>
+            <div class="form__title">Подсчитаем</div>
+            <div class="calc">
+                <div class="calc__fieldset">
+                    <label for="" class="calc__label">Кол-во пассажиров</label>
+                    <input type="number" class="calc__inp" id="square" value="1" min="0" max="50" onchange="calculateCost();">
+                </div>
+                <div class="calc__fieldset">
+                    <label for="" class="calc__label">Расход л\100км</label>
+                    <input type="number" class="calc__inp" id="floor" value="3" min="0" max="300" onchange="calculateCost();">
+                </div>
+                <div class="calc__fieldset">
+                    <label for="" class="calc__label">Пункт назначения</label>
+                    <select name="" class="calc__inp" id="materialType" onchange="calculateCost();">
+                        <option value="0">___</option>
+                        <option value="1">Суздаль (205)</option>
+                        <option value="2">Тверь (200)</option>
+                        <option value="3">Пермь (1444)</option>
+                        <option value="4">Екатеринбург (1830)</option>
+                        <option value="5">Иркутск (5200)</option>
+                        <option value="6">Краснодар (1333)</option>
+                        <option value="7">Ленинград (720)</option>
+                        <option value="8">Москва (41)</option>
+                    </select> 
+                </div>
+
+                <div class="calc__fieldset">
+                    <div class="calc__total">Цена топлива <span id="totalCost" style="font-weight:bold;">Х</span> руб</div>
+                </div>
+                <div class="calc__fieldset">
+                    <div class="calc__sale">Выгода на чел. <span id="saleCost" style="font-weight:bold;">V</span> руб</div>
+                </div>
+
+                <div class="calc__fieldset">
+                    <div class="calc__time">Время в пути <span id="timeCost" style="font-weight:bold;">T</span> час.</div>
+                </div>
+            </div>
+
+            <section class="cover">
+                <div class="cover-box">
+                  <img class="cover-box__pic" src="img/__background.png" alt="Railways" />
+                  <div class="cover-box__text">
+                    <h2>
+                      <a href="https://stampsy.com/na-elektrichkakh-do-baikala" target="_blank">До Байкала <br></br>«на собаках»</a>
+                    </h2>
+                    <p>
+                      По мотивам учебной темы о Транссибе — путешествие от столицы до
+                      Байкала на электричках.
+                    </p>
+                  </div>
+                </div>
+            </section>
+        </main>
+
+        <style>
+            a {
+                color: white;
+                text-decoration: none;
+            }
+
+            a:visited {
+                color: wheat;
+            }
+        </style>
+
+        <script src="assets/js/app1.js">
+        </script>
+
+        <footer>
+            <section class="footer">
+                <nav class="footer__link">
+                    <li><a href="https://yandex.ru/maps/" target="_blank">Карты</a></li>
+                    <li><a href="https://yandex.ru/pogoda/" target="_blank">Погода</a></li>
+                    <li><a href="https://t.rasp.yandex.ru/" target="_blank">Расписание</a></li>
+                    <li><a href="https://calendar.yandex.ru/" target="_blank">Календарь</a></li>
+                    <li><a href="https://travel.yandex.ru/" target="_blank">Путешествия</a></li>
+                </nav>
+                <p class="footer__copyright">© 2023.
+                    <a class="autor_link" href="https://github.com/Olehanter/nag-oleg">Нагорный.О</a> 
+                </p>
+            </section>
+        </footer>
+    </div>
+</body>
+
+   

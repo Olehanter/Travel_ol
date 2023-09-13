@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="RU">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./pages/index.css">
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="body">
+    <div class="page">
+        <header class="header">
+            <div class='header__logo'></div>
+            <span class="header__lang">RU EN</span>
+                <nav class="navbar">
+                    <div class="navbar-box">
+                    <div class="navbar__wrap">
+                        <div class="hamburger">
+                        <div class="hamburger__field" id="hamburger">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
+                        </div>
+                        
+                        <ul class="menu" id="menu">
+                        <li><a href="./index.html">Главная</a></li>
+                        <li><a href="./slider.html">Слайдер</a></li>
+                        <li><a href="./calc.html">Калькулятор</a></li>
+                        <li><a href="./rezune.html">Обо мне</a></li>
+                        <li><a href="./contact.html">Контакты</a></li>
+                        <li><a href="./rewiew.html">Отзывы</a></li>
+                        </ul>
+                    </div>
+                    </div>
+                </nav>
+        </header>
+
+        <main>
+            <form class="review-post">
+                <h4 class="review-post__title">Добавить свой отзыв</h4>
+                <div class="review-post__input">
+                    <div class="review-post__text-field">
+                        <label class="review-post__label-name" for="name"></label>
+                        <input class="review-post__input-name" type="text" name="name" placeholder="Имя и фамилия">
+                        <div class="review-post__input-name-error"><span>Вы забыли указать имя и фамилию</span></div>
+                    </div>
+                    <div class="review-post__text-field">
+                        <label class="review-post__label-rating" for="rating"></label>
+                        <input class="review-post__input-rating" type="number" name="rating" placeholder="Оценка">
+                        <div class="review-post__input-rating-error">Оценка должна быть <br> от 1 до 5 </div>
+                    </div>
+                </div>
+                <div class="review-post__text">
+                    <div class="review-post__text-field">
+                        <label class="review-post__label-textarea" for="text"></label>
+                        <textarea class="review-post__textarea" name="text" placeholder="Текст отзыва"></textarea>
+                    </div>
+                    <button class="review-post__btn" type="submit">Отправить отзыв</button>
+                </div>
+            </form>
+        </main>
+
+    
+        <script>
+        </script>
+
+        <footer>
+            <section class="footer">
+                <nav class="footer__link">
+                    <li><a href="https://yandex.ru/maps/" target="_blank">Карты</a></li>
+                    <li><a href="https://yandex.ru/pogoda/" target="_blank">Погода</a></li>
+                    <li><a href="https://t.rasp.yandex.ru/" target="_blank">Расписание</a></li>
+                    <li><a href="https://calendar.yandex.ru/" target="_blank">Календарь</a></li>
+                    <li><a href="https://travel.yandex.ru/" target="_blank">Путешествия</a></li>
+                </nav>
+                <p class="footer__copyright">© 2023.
+                    <a class="autor_link" href="https://github.com/Olehanter/nag-oleg">Нагорный.О</a> 
+                </p>
+            </section>
+        </footer>
+    </div>
+</body>
+</html>
+
+   

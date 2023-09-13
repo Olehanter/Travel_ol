@@ -1,0 +1,7 @@
+.cover__description {
+    color: white;
+    margin: 245px 0 auto;
+    font-size: 20px;
+    display: grid;
+    justify-items: center;
+}
